@@ -1,5 +1,6 @@
 
 Pod::Spec.new do |s|
+  s.ios.deployment_target = "7.0"
   s.name         = "GCDWebServer"
   s.version      = "0.0.1"
   s.summary      = "A short description of GCDWebServer."
@@ -10,4 +11,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://git.oschina.net/kingreader/GCDWebServer.git" }
   s.source_files  = "GCDWebServer/GCDWebDAVServer/*.{h,m}", "GCDWebServer/GCDWebServer/**/*.{h,m}", "GCDWebServer/GCDWebUploader/*.{h,m}"
   s.resource_files = "GCDWebServer/GCDWebUploader/GCDWebUploader.bundle"
+  s.requires_arc = true
 end
