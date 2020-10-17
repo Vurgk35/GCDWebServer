@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://EXAMPLE/GCDWebServer"
   s.license      = "MIT (example)"
   s.author             = { "tangjj" => "" }
-  s.source       = { :git => "http://EXAMPLE/GCDWebServer.git", :tag => "0.0.1" }
-  s.source_files  = "GCDWebDAVServer/*.{h,m}", "GCDWebServer/**/*.{h,m}", "GCDWebUploader/*.{h,m}"
-  s.resource_files = "GCDWebUploader/GCDWebUploader.bundle"
-  s.exclude_files = "Classes/Exclude"
+  s.source       = { :git => "https://git.oschina.net/kingreader/GCDWebServer.git" }
+  s.source_files  = "GCDWebServer/GCDWebDAVServer/*.{h,m}", "GCDWebServer/GCDWebServer/**/*.{h,m}", "GCDWebServer/GCDWebUploader/*.{h,m}"
+  s.resource_files = "GCDWebServer/GCDWebUploader/GCDWebUploader.bundle"
 end
