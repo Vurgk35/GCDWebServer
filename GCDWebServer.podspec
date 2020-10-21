@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://git.oschina.net/kingreader/GCDWebServer.git" }
   s.source_files  = "GCDWebServer/GCDWebDAVServer/*.{h,m}", "GCDWebServer/GCDWebServer/**/*.{h,m}", "GCDWebServer/GCDWebUploader/*.{h,m}"
   s.resource = "GCDWebServer/GCDWebUploader/GCDWebUploader.bundle"
+  s.compiler_flags = '-I$(SDKROOT)/usr/include/libxml2'
 end
